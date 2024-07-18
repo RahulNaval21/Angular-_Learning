@@ -1,0 +1,9 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+ <p>{{childData}}</p>
+<app-login [uname]="username" (notify)="parentMethod($event)"></app-login>
+<app-footer></app-footer>
+
+<a [routerLink]="['/app-template-form']">Template_Form</a>
+<br>
+<a [routerLink]="['/app-reactive-forms']">Reactive_Template_Form</a>

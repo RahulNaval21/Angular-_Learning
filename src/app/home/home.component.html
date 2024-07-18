@@ -1,0 +1,31 @@
+<p>home works!</p>
+
+
+<button (click)="getData()">get Data</button>
+
+<div>
+    yourName : <input type=""text [(ngModel)]="newName">
+    yourJob : <input type=""text [(ngModel)]="newJob">
+</div>
+<!-- <button (click)="postCheck()">Post Data</button> -->
+
+<table border="1">
+    
+    <tr>
+        <th>id</th>
+        <th>email</th>
+        <th>avatar</th>
+        <th>first_name</th>
+        <th>last_name</th>
+  </tr>
+
+    <tr *ngFor ="let newUser of Users">
+        <td>{{newUser.id}}</td>
+        <td>{{newUser.email}}</td>
+        <td>{{newUser.avatar}}</td>
+        <td>{{newUser.first_name}}</td>
+        <td>{{newUser.last_name}}</td>
+  </tr>
+</table>
+
+<!-- {{Users | json}} -->

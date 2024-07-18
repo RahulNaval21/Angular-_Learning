@@ -1,0 +1,27 @@
+<p>template-form works!</p>
+
+<table>
+    <tr>
+        <td>
+            <label>First Name</label>
+            <input type="text" [(ngModel)]="user.first_name" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Last Name</label>
+            <input type="text" [(ngModel)]="user.last_name" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Email</label>
+            <input type="text" [(ngModel)]="user.email" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="onSubmit()">Submit</button>
+        </td>
+    </tr>
+</table>

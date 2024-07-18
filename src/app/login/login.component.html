@@ -1,0 +1,51 @@
+
+
+<!-- Login -->
+
+<div>
+    Login
+</div>
+  
+  <div>
+    User Id : <input type="text" [(ngModel)]="userId">
+  </div>
+  
+  
+  <div>
+    Password : <input type="password" [(ngModel)]="password">
+  </div>
+ 
+  <div>
+    <button (click) = "onLogin()"> Login </button>
+  </div>
+  
+  
+  
+  <div>
+    Name : <input type="text" [(ngModel)]="name">
+    <button (click)="addName()">Add</button>
+</div>
+
+<div>
+ 
+  <button (click)="dltName()">Delete</button>
+</div>
+
+
+  <li *ngFor="let fruit of data">
+    <b> {{fruit.item}} </b>           
+ </li>
+
+<!-- <appDirectiveLearning></appDirectiveLearning> -->
+ <h1 appDirectiveLearning>Hello</h1>
+ <h2 appDirectiveLearning>New</h2>
+
+ <h1>{{uname}}</h1>
+ 
+ <div>
+  <button (click) = "onChildToParent()"> childToParent </button>
+</div>
+
+<div>{{username2}}</div>
+<!-- <h1>{{name1}}</h1> -->
+<!-- <p [ngStyle]="{ 'color': (value ? value : 'red') }">Hello</p> -->

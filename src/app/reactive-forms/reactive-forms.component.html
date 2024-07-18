@@ -1,0 +1,29 @@
+<p>reactive-forms works!</p>
+
+<table [formGroup]="userGroup">
+    <tr>
+      <td><label for="first_Name">First Name</label></td>
+      <td><input id="first_Name" type="text" formControlName="first_name" /></td>
+    </tr>
+    <tr>
+      <td><label>Last Name</label></td>
+      <td><input type="text" formControlName="last_name" /></td>
+    </tr>
+    <tr>
+      <td>
+        <label>Email</label>
+      </td>
+      <td>
+        <input type="text" formControlName="email" />
+      </td>
+    </tr>
+
+</table>
+<h1>{{userGroup.value.first_name}}</h1>
+<h1>{{userGroup.value.last_name}}</h1>
+<h1>{{userGroup.value.email}}</h1>
+
+  <button (click)="onSubmit()">Submit</button>
+
+
+  <!-- <p>Value:- {{first_Name.value}}</p> -->

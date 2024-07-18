@@ -1,0 +1,44 @@
+
+
+
+<!-- Login -->
+
+<div>
+    Signup
+</div>
+  
+  <div>
+    FirstName : <input type="text" [(ngModel)]="firstName">
+  </div>
+  
+  
+  <div>
+    LastName : <input type="text" [(ngModel)]="lastName">
+  </div>
+
+  <div>
+    password : <input type="password" [(ngModel)]="password">
+  </div>
+
+  <div>
+    confirmPassword : <input type="password" [(ngModel)]="confirmPassword">
+  </div>
+  
+  <!-- <div>
+    DOB: <input type="date" [(ngModel)]="bdate">
+  </div> -->
+
+  <div>
+    DOB : <input type="date" [(ngModel)]="DOB" (change)="calculateAge()">
+  </div>
+  
+  <div>
+    Age: {{ age }}
+  </div>
+  
+  <div>
+    <button (click) = "onRegister()"> Register </button>
+  </div>
+  
+  
+  
